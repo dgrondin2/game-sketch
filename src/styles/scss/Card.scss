@@ -1,0 +1,44 @@
+.card {
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  text-align: left;
+  width: 250px;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    h4 {
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    p {
+      flex: 1;
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.new-card-btn .card {
+  border-style: dashed;
+  display: inline-block;
+  opacity: 0.4;
+  padding-top: 107px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 1.0;
+  }
+}

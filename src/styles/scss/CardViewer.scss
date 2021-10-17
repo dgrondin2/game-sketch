@@ -1,0 +1,19 @@
+.card-viewer {
+  flex: 1;
+
+  h2 {
+    margin-bottom: 0;
+    margin-left: 20px;
+    text-transform: capitalize;
+  }
+  .card-detail-view {
+    p {
+      margin-left: 20px;
+    }
+  }
+}
+
+.cards > li {
+  display: inline-block;
+  vertical-align: top;
+}

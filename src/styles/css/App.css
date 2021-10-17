@@ -1,3 +1,14 @@
+html, body, #root, .App, .content-wrapper {
+  height: 100%;
+}
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
 
 /*# sourceMappingURL=App.css.map */

@@ -1,0 +1,25 @@
+header {
+    border-bottom: 1px solid black;
+    display: flex;
+    z-index: 10;
+
+    h1 {
+        margin-left: 5px;
+        width: 266px;
+    }
+    nav {
+        flex: 1;
+        padding-top: 32px;
+
+        a {
+            color: #000;
+            font-weight: bold;
+            margin-right: 70px;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

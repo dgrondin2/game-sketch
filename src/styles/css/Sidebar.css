@@ -1,0 +1,79 @@
+.sidebar {
+  background-color: #eee;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  flex: none;
+  height: 100%;
+  width: 250px;
+}
+.sidebar .text-wrapper {
+  padding: 5px;
+}
+.sidebar .categories .category.open .category-btn-wrapper .accordion-toggle .accordion-icon {
+  transform: rotate(135deg);
+}
+.sidebar .categories .category.active .category-btn-wrapper .category-btn .text-wrapper {
+  background-color: #ffff00;
+}
+.sidebar .categories .category .category-btn-wrapper {
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar .categories .category .category-btn-wrapper .accordion-toggle {
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+  border-left: 5px solid #000;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  height: 40px;
+  padding-left: 10px;
+  text-align: left;
+  text-transform: capitalize;
+  width: 45px;
+}
+.sidebar .categories .category .category-btn-wrapper .accordion-toggle:hover {
+  text-decoration: underline;
+}
+.sidebar .categories .category .category-btn-wrapper .accordion-toggle .accordion-icon {
+  border: 2px solid #555;
+  border-left: none;
+  border-bottom: none;
+  display: block;
+  height: 12px;
+  transform: rotate(45deg);
+  width: 12px;
+}
+.sidebar .categories .category .category-btn-wrapper .category-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  font-weight: bold;
+  text-align: left;
+  text-transform: capitalize;
+}
+.sidebar .categories .category .category-btn-wrapper .category-btn:hover {
+  text-decoration: underline;
+}
+.sidebar .categories .category .accordion-content > li {
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 5px;
+  line-height: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sidebar .categories .category .accordion-content > li.active > .text-wrapper {
+  background-color: #ffff00;
+}
+
+/*# sourceMappingURL=Sidebar.css.map */

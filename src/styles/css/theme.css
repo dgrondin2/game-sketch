@@ -1,0 +1,80 @@
+/* 
+TODO: Figure out how to do a yellow highlighter animated effect on hover, 
+and have active states be shown by yellow highlighter behind text.
+
+Do I need to do this for multiple lines of text?
+*/
+div, span, p {
+  font-size: 14px;
+}
+
+.secondary-btn, .primary-btn {
+  border-radius: 0;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.secondary-btn:hover, .primary-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.primary-btn {
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+
+.secondary-btn {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.cta {
+  margin-top: 40px;
+  overflow: hidden;
+}
+.cta > * {
+  float: right;
+  margin-left: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  display: block;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  height: 250px;
+  padding: 7px;
+  resize: none;
+  width: calc(100% - 18px);
+}
+
+input[type=text] {
+  font-size: 14px;
+  padding: 7px;
+  width: calc(100% - 20px);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pull-right {
+  float: right;
+}
+
+/*# sourceMappingURL=theme.css.map */
