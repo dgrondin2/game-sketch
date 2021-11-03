@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/css/Sidebar.css';
 
 function Sidebar(props) {
@@ -40,5 +41,15 @@ function Sidebar(props) {
     </div>
   )
 }
+
+Sidebar.propTypes = {
+  selectedCategory: PropTypes.string, 
+  selectedCard: PropTypes.object,
+  accordions: PropTypes.object,
+  clickAccordionHandler: PropTypes.func,
+  clickCategoryHandler: PropTypes.func,
+  clickCardHandler: PropTypes.func,
+  cards: PropTypes.object
+};
 
 export default Sidebar;

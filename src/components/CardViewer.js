@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import PropTypes from 'prop-types';
 import '../styles/css/CardViewer.css';
 import Card from './Card';
 import Modal from './Modal';
@@ -118,5 +119,13 @@ function CardViewer(props) {
     </div>
   )
 }
+
+CardViewer.propTypes = {
+  selectedCategory: PropTypes.string,
+  selectedCard: PropTypes.object,
+  cards: PropTypes.arrayOf(PropTypes.object),
+  addCard: PropTypes.func,
+  clickCardHandler: PropTypes.func
+};
 
 export default CardViewer;
