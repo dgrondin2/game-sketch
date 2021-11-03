@@ -1,9 +1,68 @@
 .card-viewer {
   flex: 1;
 
-  h2 {
-    margin-bottom: 0;
-    margin-left: 20px;
+  .card-viewer-header {
+    position: relative;
+
+    h2 {
+      margin-bottom: 0;
+      margin-left: 20px;
+    }
+    .viewer-controls {
+      position: absolute;
+      right: 10px;
+      top: -10px;
+
+      > button {
+        background: transparent;
+        border: 1px solid #000;
+        border-right: none;
+        cursor: pointer;
+        height: 40px;
+        position: relative;
+        width: 40px;
+  
+        :hover {
+          ::before {
+            display: block;
+          }
+        }
+        &::after {
+          content: "";
+          display: block;
+          height: 16px;
+          left: 11px;
+          position: absolute;
+          transform: scale(1.5);
+          top: 10px;
+          width: 16px;
+        }
+        &:last-child {
+          border-right: 1px solid #000;
+        }
+      }
+      .small-cards-btn {
+        &::after {
+          background-image: url('../../images/icons/grid-3x3-gap.svg');
+        }
+      }
+      .medium-cards-btn {
+        &::after {
+          background-image: url('../../images/icons/grid.svg');
+        }
+      }
+      .large-cards-btn {
+        &::after {
+          border: 1px solid #000;
+          content: "";
+          display: block;
+          height: 11px;
+          width: 15px;
+          border-radius: 2px;
+          top: 12px;
+        }
+      }
+    }
   }
   .card-detail-view {
     p {

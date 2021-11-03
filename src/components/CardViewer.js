@@ -51,7 +51,14 @@ function CardViewer(props) {
   else if (props.selectedCategory) { // category selected, show all cards view
     view = (
       <div>
-        <h2>{props.selectedCategory}</h2>
+        <div className="card-viewer-header">
+          <h2>{props.selectedCategory}</h2>
+          <div className="viewer-controls">
+            <button className="small-cards-btn"></button>
+            <button className="medium-cards-btn"></button>
+            <button className="large-cards-btn"></button>
+          </div>
+        </div>
         <ul className="cards">
           {props.cards.map((card, index) => {
             return (

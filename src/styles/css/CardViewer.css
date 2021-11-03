@@ -1,9 +1,57 @@
 .card-viewer {
   flex: 1;
 }
-.card-viewer h2 {
+.card-viewer .card-viewer-header {
+  position: relative;
+}
+.card-viewer .card-viewer-header h2 {
   margin-bottom: 0;
   margin-left: 20px;
+}
+.card-viewer .card-viewer-header .viewer-controls {
+  position: absolute;
+  right: 10px;
+  top: -10px;
+}
+.card-viewer .card-viewer-header .viewer-controls > button {
+  background: transparent;
+  border: 1px solid #000;
+  border-right: none;
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+.card-viewer .card-viewer-header .viewer-controls > button :hover ::before {
+  display: block;
+}
+.card-viewer .card-viewer-header .viewer-controls > button::after {
+  content: "";
+  display: block;
+  height: 16px;
+  left: 11px;
+  position: absolute;
+  transform: scale(1.5);
+  top: 10px;
+  width: 16px;
+}
+.card-viewer .card-viewer-header .viewer-controls > button:last-child {
+  border-right: 1px solid #000;
+}
+.card-viewer .card-viewer-header .viewer-controls .small-cards-btn::after {
+  background-image: url("../../images/icons/grid-3x3-gap.svg");
+}
+.card-viewer .card-viewer-header .viewer-controls .medium-cards-btn::after {
+  background-image: url("../../images/icons/grid.svg");
+}
+.card-viewer .card-viewer-header .viewer-controls .large-cards-btn::after {
+  border: 1px solid #000;
+  content: "";
+  display: block;
+  height: 11px;
+  width: 15px;
+  border-radius: 2px;
+  top: 12px;
 }
 .card-viewer .card-detail-view p {
   margin-left: 20px;
