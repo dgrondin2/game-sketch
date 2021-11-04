@@ -43,7 +43,9 @@ function CardViewer(props) {
   if (props.selectedCard) { // card selected, show card detail/edit page
     view = (
       <div className="card-detail-view">
-        <h2>{props.selectedCard.title}</h2>
+        <div className="card-viewer-header">
+          <h2>{props.selectedCard.title}</h2>
+        </div>
         <p>{props.selectedCard.body}</p>
       </div>
     );

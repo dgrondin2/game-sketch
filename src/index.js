@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//import './fonts/angelina/angelina.ttf';
+//import './fonts/merriweather/Merriweather-Regular.ttf';
+
 
 ReactDOM.render(
   <React.StrictMode>

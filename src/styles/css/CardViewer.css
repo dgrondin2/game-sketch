@@ -1,5 +1,6 @@
 .card-viewer {
   flex: 1;
+  font-family: merriweather;
 }
 .card-viewer .card-viewer-header {
   position: relative;
