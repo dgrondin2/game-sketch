@@ -9,7 +9,7 @@ function Modal(props) {
   return (
     <div className="modal-wrapper">
       <div className="modal">
-        <button className="clone-btn" onClick={props.handleCloseModal}>X</button>
+        <button className="close-btn" onClick={props.handleCloseModal}>X</button>
         {props.children}
       </div>
       <div className="modal-overlay" onClick={props.handleCloseModal}></div>

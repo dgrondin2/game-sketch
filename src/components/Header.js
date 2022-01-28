@@ -41,7 +41,7 @@ function Header(props) {
     <header>
       <h1>Game Sketch</h1>
       <nav>
-        <a href="#" onClick={handleNew}>New</a>
+        <a href="#" onClick={handleNew}>New Project</a>
         <a href="#" onClick={handleSave}>Save</a>
         <a href="#" onClick={handlePublish}>Publish</a>
         <a href="#" onClick={handleSettings}>Settings</a>

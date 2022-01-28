@@ -13,6 +13,10 @@ function CardViewer(props) {
     setShowNewModal(true);
   }
 
+  function handleCloseModal(e) {
+    setShowNewModal(false);
+  }
+
   function handleCreateNewCard(e) {
     const cards = props.cards;
     const id = cards[cards.length-1].id + 1;
@@ -24,10 +28,6 @@ function CardViewer(props) {
     e.preventDefault();
     props.addCard(card);
     handleCloseModal();
-  }
-
-  function handleCloseModal(e) {
-    this.setState({showNewModal: false});
   }
 
   function handleInputChange(e) {
@@ -76,7 +76,7 @@ function CardViewer(props) {
           })}
           <li className="new-card-btn" onClick={handleClickNew}>
             <Card>
-              <span>Create New Card</span>
+              <span>New Card</span>
             </Card>
           </li>
         </ul>

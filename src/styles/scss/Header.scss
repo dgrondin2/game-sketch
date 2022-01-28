@@ -1,29 +1,29 @@
 header {
-    border-bottom: 1px solid black;
-    display: flex;
-    z-index: 10;
+  border-bottom: 1px solid black;
+  display: flex;
+  z-index: 10;
 
-    h1 {
-        margin-left: 10px;
-        font-family: "angelina";
-        width: 261px;
-        font-size: 40px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+  h1 {
+    margin-left: 20px;
+    font-family: "angelina";
+    width: 251px;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  nav {
+    flex: 1;
+    padding-top: 37px;
+
+    a {
+      color: #000;
+      font-weight: bold;
+      margin-right: 70px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
-    nav {
-        flex: 1;
-        padding-top: 32px;
-
-        a {
-            color: #000;
-            font-weight: bold;
-            margin-right: 70px;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+  }
 }

@@ -37,6 +37,10 @@ function Sidebar(props) {
             </li>
           )
         })}
+        <li className="new-category">
+          <button>+</button>
+          <span className="text-wrapper">New Category</span>
+        </li>
       </ul>
     </div>
   )

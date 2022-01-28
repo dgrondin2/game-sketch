@@ -29,47 +29,6 @@ function Project(props) {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
-  // divides up mock data into our card ctegories. remove when backend is wired up.
-  function setUpMockData(data) {
-    console.log("mock data before: ", data);
-    let result = {
-      story: [],
-      characters: [],
-      dialogue: [],
-      items: [], 
-      powers: [],
-      environments: []
-    };
-
-    for (let i = 0; i < data.length; i++) {
-      if (i < 10) {
-        result.story.push(data[i]);
-      }
-      else if (i < 20) {
-        result.characters.push(data[i]);
-      }
-      else if (i < 30) {
-        result.dialogue.push(data[i]);
-      }
-      else if (i < 40) {
-        result.items.push(data[i]);
-      }
-      else if (i < 50) {
-        result.powers.push(data[i]);
-      }
-      else if (i < 60) {
-        result.environments.push(data[i]);
-      }
-      else {
-        break;
-      }
-    }
-
-    console.log("mock data after: ", result);
-
-    return result;
-  }
-
   function categoryClickHandler(category) {
     setSelectedCategory(category);
     setSelectedCard(null);
@@ -88,8 +47,8 @@ function Project(props) {
 
   function addCard(card) {
     console.log("new card: ", card);
-    let cards = _.cloneDeep(cardData);
-    cardData[selectedCategory].push(card);
+    const cards = _.cloneDeep(cardData);
+    cards[selectedCategory].push(card);
     setCardData(cards);
   }
 
@@ -142,6 +101,47 @@ function Project(props) {
       </Modal> 
     </div>
   )
+}
+
+// divides up mock data into our card ctegories. remove when backend is wired up.
+function setUpMockData(data) {
+  console.log("mock data before: ", data);
+  let result = {
+    story: [],
+    characters: [],
+    dialogue: [],
+    items: [], 
+    powers: [],
+    environments: []
+  };
+
+  for (let i = 0; i < data.length; i++) {
+    if (i < 10) {
+      result.story.push(data[i]);
+    }
+    else if (i < 20) {
+      result.characters.push(data[i]);
+    }
+    else if (i < 30) {
+      result.dialogue.push(data[i]);
+    }
+    else if (i < 40) {
+      result.items.push(data[i]);
+    }
+    else if (i < 50) {
+      result.powers.push(data[i]);
+    }
+    else if (i < 60) {
+      result.environments.push(data[i]);
+    }
+    else {
+      break;
+    }
+  }
+
+  console.log("mock data after: ", result);
+
+  return result;
 }
 
 export default Project;

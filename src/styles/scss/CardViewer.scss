@@ -19,9 +19,9 @@
         border: 1px solid #000;
         border-right: none;
         cursor: pointer;
-        height: 40px;
+        height: 39px;
         position: relative;
-        width: 40px;
+        width: 39px;
   
         :hover {
           ::before {
@@ -43,6 +43,8 @@
         }
       }
       .small-cards-btn {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
         &::after {
           background-image: url('../../images/icons/grid-3x3-gap.svg');
         }
@@ -53,12 +55,14 @@
         }
       }
       .large-cards-btn {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
         &::after {
           border: 1px solid #000;
           content: "";
           display: block;
           height: 11px;
-          width: 15px;
+          width: 13px;
           border-radius: 2px;
           top: 12px;
         }
@@ -66,6 +70,7 @@
     }
   }
   .card-detail-view {
+    max-width: 900px;
     p {
       margin-left: 20px;
     }

@@ -1,0 +1,23 @@
+
+
+top priority:
+
+ - landing page
+ - tie backend to database
+ - editable cards
+ - ability to add new categories
+ - login
+ - deploy
+
+
+
+lower priority
+
+ - click-and-draggable cards in card viewer
+ - customizable pen and highlighter color via settings modal
+ - "create new card" buttons in each sidebar category
+
+ - testing
+
+ - rename Project component to Sketch
+

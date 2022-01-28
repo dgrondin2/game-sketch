@@ -1,0 +1,143 @@
+.bulletin-board {
+  background: url("../../images/cork-board.jpg");
+  background-size: contain;
+  border: 30px solid black;
+  height: 1200px;
+  padding: 30px 0 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bulletin-board .card-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+.bulletin-board .card-row .card:first-child {
+  transform: rotate(1deg);
+}
+.bulletin-board .card-row .card:last-child {
+  transform: rotate(-3deg);
+}
+.bulletin-board .card-row .card:last-child::after {
+  background-image: url("../../images/thumbtack-blue.png");
+}
+.bulletin-board .card-row:last-child {
+  margin-top: 50px;
+}
+.bulletin-board .postit-row {
+  display: flex;
+  justify-content: space-around;
+}
+.bulletin-board .postit-row .postit:first-child {
+  transform: rotate(-4deg);
+}
+.bulletin-board .postit-row .postit:nth-child(2) {
+  transform: rotate(2deg);
+}
+.bulletin-board .postit-row .postit:last-child {
+  transform: rotate(4deg);
+}
+.bulletin-board .icon {
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+.bulletin-board .free-icon {
+  background-image: url("../../images/icons/free.png");
+  background-size: 50px;
+}
+.bulletin-board .lightbulb-icon {
+  background-image: url("../../images/icons/lightbulb.png");
+  background-size: 43px;
+  background-repeat: no-repeat;
+}
+.bulletin-board .bicep-icon {
+  background-image: url("../../images/icons/bicep.png");
+  background-size: 38px;
+  background-repeat: no-repeat;
+}
+.bulletin-board .smiley-icon {
+  background-image: url("../../images/icons/smiley.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  height: 110px;
+  width: 110px;
+  margin-top: 40px;
+}
+
+.logo-section {
+  background: url("../../images/grid3.png");
+  background-repeat: repeat;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 500px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.logo-section h1 {
+  background: url("../../images/highlighter2.png");
+  background-repeat: no-repeat;
+  background-size: 520px;
+  background-position: -4px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 180px;
+  font-size: 70px;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: mukta-mahee;
+  font-weight: lighter;
+  opacity: 0.8;
+  padding: 0 40px;
+}
+.logo-section .get-started-logo {
+  background-color: #000;
+  border-radius: 3px;
+  color: #fff;
+  font-family: mukta-mahee;
+  font-size: 20px;
+  width: 170px;
+  height: 40px;
+  padding-top: 7px;
+  position: absolute;
+  left: calc(50vw - 85px);
+  top: 370px;
+}
+
+.features-section {
+  background: url("../../images/ripped-paper.png");
+  font-family: "mukta-mahee";
+  margin: 0 auto;
+  margin-top: -330px;
+  margin-bottom: 150px;
+  padding-bottom: 50px;
+  position: relative;
+  width: 730px;
+}
+.features-section::after {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  right: 300px;
+  background-image: url("../../images/thumbtack-red.png");
+}
+.features-section h2 {
+  font-size: 30px;
+  padding-top: 50px;
+  padding-left: 80px;
+}
+.features-section ul {
+  font-size: 18px;
+  padding-left: 100px;
+  padding-right: 30px;
+  list-style-type: circle;
+}
+
+/*# sourceMappingURL=Landing.css.map */

@@ -47,6 +47,14 @@ div, span, p {
   font-family: "merriweather";
   src: url("../../fonts/merriweather/Merriweather-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "american-typewriter";
+  src: url("../../fonts/american-typewriter/american-typewriter-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "mukta-mahee";
+  src: url("../../fonts/mukta-mahee/MuktaMahee-Regular.ttf") format("truetype");
+}
 html body {
   font-family: Arial, Helvetica, sans-serif;
 }

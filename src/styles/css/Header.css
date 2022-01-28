@@ -4,16 +4,16 @@ header {
   z-index: 10;
 }
 header h1 {
-  margin-left: 10px;
+  margin-left: 20px;
   font-family: "angelina";
-  width: 261px;
+  width: 251px;
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 header nav {
   flex: 1;
-  padding-top: 32px;
+  padding-top: 37px;
 }
 header nav a {
   color: #000;

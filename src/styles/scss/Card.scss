@@ -1,17 +1,27 @@
 .card {
-  border: 1px solid black;
+  background: url("../../images/indexcard.jpg");
+  background-size: contain;
   box-sizing: border-box;
-  display: inline-block;
-  font-family: "merriweather";
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  font-family: "american-typewriter";
   height: 250px;
   margin-top: 20px;
   margin-left: 20px;
   padding: 10px;
+  position: relative;
   text-align: left;
-  width: 250px;
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  width: 405px;
+
+  &::after {
+    content: "";
+    display: block;
+    background: url("../../images/thumbtack-red.png");
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+    right: -20px;
   }
 
   .card-content-wrapper {
@@ -28,6 +38,14 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
+  }
+  h2 {
+    margin: -3px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 24px;
   }
 }
 
